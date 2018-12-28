@@ -1,0 +1,22 @@
+<div class="container">
+  <form class="form-inline">
+    <label class="sr-only" for="playerTag">Name</label>
+    <input #txtTag type="text" class="form-control mb-2 mr-sm-2" id="playerTag" placeholder="Tag Jugador: #ABCDEF12">
+
+    <button class="btn btn-primary mb-2" (click)="getHero(txtTag.value)">Buscar</button>
+  </form>
+
+  <ng-container
+    *ngIf=""
+  >
+
+  </ng-container>
+  <ng-template #divPlayer>
+    Hay Player!
+  </ng-template>
+
+  <div class="row" *ngIf="player.reason == 'notFound'; else divPlayer">
+    No se encontró el jugador.
+  </div>
+
+</div>

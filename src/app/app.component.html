@@ -1,12 +1,11 @@
-<h1>Blog Posts</h1>
-
-<div *ngIf="undefined === restItems">Loading...</div>
-
-<div *ngIf="undefined !== restItems">
-  <ul>
-    <li *ngFor="let player of restItems" [innerHTML]="post.tag"
-        (click)="selectedContent='<h1>' + player.tag + '</h1>' + player.name">
-    </li>
-  </ul>
-</div>
-
+<app-layout>
+  <div class="jumbotron">
+    <h1>Clash Royale Angular</h1>
+    <p>
+      Entrenamiento en Angular para obtener datos de API de Clash Royale
+    </p>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</app-layout>
