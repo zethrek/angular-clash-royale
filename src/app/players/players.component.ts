@@ -39,4 +39,7 @@ export class PlayersComponent implements OnInit {
       .subscribe(player => this.player = player);
   }
 
+  getHero(value: any){
+
+  }
 }
