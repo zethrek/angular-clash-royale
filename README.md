@@ -1,6 +1,6 @@
 # Angular Clash Royale
 
-Front-end para obtener datos desde la API de Clash Royale. Los datos se traen desde un backend desarrollado en Laravel (https://github.com/gabrielJS/laravel-clash-royale).
+Front-end para obtener datos desde la API de Clash Royale (https://developer.clashroyale.com). Los datos se traen desde un backend desarrollado en Laravel (https://github.com/gabrielJS/laravel-clash-royale).
 
 ## Servidor de Desarrollo
 
